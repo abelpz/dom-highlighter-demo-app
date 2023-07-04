@@ -89,7 +89,7 @@ export class Highlighter {
   }
 
   addBlocks() {
-    const highlightsWrapper = document.createElement("div");
+    const highlightsWrapper = document.createElement("hl-wrapper");
     this.createdElements.push(highlightsWrapper);
     Object.entries({
       direction: `ltr`,
