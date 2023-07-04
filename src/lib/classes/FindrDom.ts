@@ -1,7 +1,7 @@
 import { Highlighter } from "./Highlighter";
 import { FindrConfig, FindrParams } from "@findr/text";
 import { getTokens } from "../helpers";
-import { findrDom } from "..";
+import { findrDom, FindrDomParams } from "..";
 
 interface FindrDomOptions extends FindrConfig {
   highlights?: boolean;

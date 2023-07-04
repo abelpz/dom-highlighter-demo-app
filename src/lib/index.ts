@@ -1,7 +1,7 @@
 import findr, { FindrParams } from "@findr/text";
-import { getNodeText, getTokens } from "./helpers";
+import { getNodeText } from "./helpers";
 
-interface FindrDomParams extends Omit<FindrParams, "source"> {
+export interface FindrDomParams extends Omit<FindrParams, "source"> {
   source: Element;
 }
 
