@@ -27,14 +27,16 @@ export const SearchForm = ({ onSubmit, defaultTarget }: SearchFormProps) => {
   };
   return (
     <form onSubmit={setFormData} style={{ marginBottom: "0.4em" }}>
-      <div>
-        <label htmlFor="target">Search:</label>
+      <div className="search-input">
         <input
           name="target"
           id="target"
           type={"text"}
           defaultValue={defaultTarget}
         />
+        <button name={"submit"} id={"submit"} type={"submit"}>
+          search
+        </button>
       </div>
       <fieldset>
         <legend>Options:</legend>
@@ -52,9 +54,6 @@ export const SearchForm = ({ onSubmit, defaultTarget }: SearchFormProps) => {
           <label htmlFor="isRegex">Use regular expression</label>
         </div>
       </fieldset>
-      <button name={"submit"} id={"submit"} type={"submit"}>
-        search
-      </button>
     </form>
   );
 };

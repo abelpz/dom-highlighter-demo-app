@@ -13,7 +13,7 @@ export function Content() {
         <Editable>
           <br />
           <p>
-            And then, on the web,you often need{" "}
+            And then, on the web, you often need{" "}
             <u>
               <em>«text</em>
             </u>{" "}
@@ -21,10 +21,10 @@ export function Content() {
             <strong>
               <em>be</em>
             </strong>{" "}
-            <em>Highlighted</em> within mixed» and/or nested html tags/markup,
+            <em>highlighted</em> within mixed» and/or nested HTML tags/markup,
             like when you implement a search feature in your app.
             It's&nbsp;pretty easy to find implementations that can partially
-            highlight text in html.
+            highlight text in HTML.
           </p>
         </Editable>
         <Editable>
@@ -34,7 +34,7 @@ export function Content() {
             <em>
               to be <u>highlighted</u>
             </em>{" "}
-            is spanning «across multiple diverse» html tags (think rich-text
+            is spanning «across multiple diverse» HTML tags (think rich-text
             formatting)
           </p>
           <p>
@@ -55,7 +55,7 @@ export function Content() {
               <h3>So how do we solve this?</h3>
             </summary>
             <p>
-              In order for text to be highlighted across multiple html elements,
+              In order for text to be highlighted across multiple HTML elements,
               we can use a very simple <em>state machine</em>: the basic idea is
               that we loop character by character over the
               <code>TextNodes</code> within a given root until we eventually
@@ -64,7 +64,7 @@ export function Content() {
 
             <p>
               The point of this notebook is to show you a way to solve this
-              problem (highlighting html text) using JavaScript and show you a
+              problem (highlighting HTML text) using JavaScript and show you a
               few tricks along the way!
             </p>
           </div>
@@ -79,7 +79,7 @@ export function Content() {
               There is a reason why so little existing solutions deal with this
               case: the state machine is probably slower compared to other
               methods that rely on native highly optimized code to search for
-              text to be highlighted and there's a chance we're trading speed
+              text to be highlighted, and there's a chance we're trading speed
               for precision.
             </p>
             <p>
