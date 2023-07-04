@@ -19,14 +19,16 @@ function App() {
   return (
     <div className="App">
       <SearchForm onSubmit={setHighlighterData} defaultTarget={defaultTarget} />
-      <div className="card">
+      <div className="workspace">
         {!show ? null : (
-          <Highlighted {...highlighterState}>
-            <Content />{" "}
-          </Highlighted>
+          <div className="card">
+            <Highlighted {...highlighterState}>
+              <Content />{" "}
+            </Highlighted>
+          </div>
         )}
       </div>
-      <button onClick={() => setShow((show) => !show)}>
+      <button className="toggle-show" onClick={() => setShow((show) => !show)}>
         {show ? "hide content" : "show content"}
       </button>
     </div>
